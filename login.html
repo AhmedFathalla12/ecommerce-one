@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topoco</title>
+
+    <!--
+        file css
+    -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_regs.css">
+    <!--
+        font Awesome
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container top-nav">
+            <a href="" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart__header">
+                <div onclick="openCart()" class="icon__cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count__item">0</span>
+                </div>
+                <div class="total__price">
+                    <p>My Cart:</p>
+                    <p class="price__cart__head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu"></i>
+                <ul id="menu">
+                    <span onclick="closeMenu()" class="bg-overlay"></span>
+                    <i onclick="closeMenu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="all.products.html">all product</a></li>
+                    <li><a href="about.html">about me</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div class="loging__signup">
+                    <a href="login.html">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top__cart">
+            <h3>My Cart <span class="count_item_head">(0Item In Cart)</span> </h3>
+            <i onclick="closeCart()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+        </div>
+
+        <div class="items__in__cart">
+        </div>
+        <div class="bottom__cart">
+            <div class="total">
+                <p>Cart Subtotal</p>
+                <p class="price__cart__total">$0</p>
+            </div>
+            <div class="button__cart">
+                <a href="checkout.html" class="btn__cart">Proceed to checkout</a>
+                <button onclick="closeCart()" class="btn__cart trans__bg">Shop more</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="signin sec__form">
+        <div class="form__container">
+            <p class="title">Hello, Friend!</p>
+
+            <form class="form" action="">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <p class="page-link"><a href="" class="page-link-label">Forget Password</a></p>
+                <button class="form-btn">Login</button>
+            </form>
+            <p class="sign-up-label">
+                Don't have an account? <a class="sign-up-link" href="signup.html">sign up</a>
+            </p>
+            <div class="buttons-container">
+                <div class="apple-login-button">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>Login with apple</span>
+                </div>
+                <div class="googel-login-button">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Login with Google</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+                <p>"Topoco: Your Premier Destination for Cutting-Edge Electronics Online."</p>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/ahmed.fathalla.370515/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/AhmedFa12072793"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ahmed_fathalla121/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-fathalla-624677255/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>FAQs & Help</h4>
+                <div class="links">
+                    <a href="#">F.A.Q.S</a>
+                    <a href="#">Oredering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+                <div class="links">
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & Shipping</a>
+                    <a href="#">Estimated Delivery Time</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Information</h4>
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Topico.</span> all rights reserved</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/localstorage.js"></script>
+
+</body>
+
+</html>
